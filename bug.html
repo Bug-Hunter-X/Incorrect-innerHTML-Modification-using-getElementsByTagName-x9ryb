@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Incorrect way to access element using getElementsByTagName
+    let divElements = document.getElementsByTagName('div');
+    divElements.innerHTML = "<p>This text replaces the div content incorrectly.</p>"; 
+  </script>
+</body>
+</html>
